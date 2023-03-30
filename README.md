@@ -51,17 +51,6 @@ saved_models
 ├── best.model_CNNCap_msre_55nm_B_2_4_6_env.pth.tar
 ├── best.model_CNNCap_msre_55nm_C_2_3_6_env.pth.tar
 └── best.model_CNNCap_msre_55nm_C_2_4_6_env.pth.tar
-data
-├── 15nm_B_2_4_6.json
-├── 15nm_B_2_4_9.json
-├── 15nm_B_3_6_8.json
-├── 15nm_C_2_4_6.json
-├── 15nm_C_2_4_9.json
-├── 15nm_C_3_6_8.json
-├── 55nm_B_2_3_6.json
-├── 55nm_B_2_4_6.json
-├── 55nm_C_2_3_6.json
-└── 55nm_C_2_4_6.json
 ```
 
 ## Running Commands for 2-D Pattern
