@@ -57,15 +57,25 @@ saved_models
 
 You can run the following command to predict the total capacitance of 15nm_B_2_4_6 dataset with the model we provide.
 
-``
-python test.py --model saved_models/best.model_CNNCap_mse_15nm_B_2_4_6_total.pth.tar --logfile log/log_eval_model_CNNCap_mse_15nm_B_2_4_6_total.txt --data_path data/15nm_B_2_4_6.json --goal total
-``
+```
+python test.py --model saved_models/best.model_CNNCap_mse_15nm_B_2_4_6_total.pth.tar \
+  --logfile log/log_eval_model_CNNCap_mse_15nm_B_2_4_6_total.txt \
+  --data_path data/15nm_B_2_4_6.json \
+  --goal total
+```
 
 You can also train a model for predicting dominant capacitance on the 15nm_B_2_4_6 dataset by running the following command.
 
-``
-python train.py --lr 1e-5 --batch_size 64 --savename model_tmp.pth --logfile log/log_tmp.txt --epoch 1 --goal env --data_path data/55nm_C_2_3_6.json --loss msre 
-``
+```
+python train.py --lr 1e-5 \
+  --batch_size 64 \
+  --savename model_tmp.pth \
+  --logfile log/log_tmp.txt \
+  --epoch 100 \
+  --goal env \
+  --data_path data/55nm_C_2_3_6.json \
+  --loss msre 
+```
 
 For more details on training and testing code, please refer to `train.py` and `test.py`.
 
