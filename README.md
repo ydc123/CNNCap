@@ -1,6 +1,6 @@
 ## CNN-Cap
 
-This repository is the official repository for our paper "CNN-Cap: Effective convolutional neural network based capacitance models for full-chip parasitic extraction" and "CNN-Cap: Effective convolutional neural network based capacitance models for interconnect capacitance extraction". These repository provides several datasets and models for 2-D and 3-D interconnect capacitance extraction.
+This repository is the official repository for our paper "CNN-Cap: Effective convolutional neural network based capacitance models for full-chip parasitic extraction" and "CNN-Cap: Effective convolutional neural network based capacitance models for interconnect capacitance extraction". This repository provides several datasets and models for 2-D and 3-D interconnect capacitance extraction.
 
 <p align="center">
   <img src="imgs/figure.png" alt="bounding box" width="640px">
