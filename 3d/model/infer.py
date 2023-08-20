@@ -20,7 +20,6 @@ parser.add_argument('--batch_size', '--bs', default=64, type=int,
 parser.add_argument('--logfile', default='log/log.txt', type=str, help='log file path')
 parser.add_argument('--data_path', default='../dataset', type=str, help='path of data')
 parser.add_argument('--savename', type=str, help='checkpoint name', default='demo.pth')
-parser.add_argument('--evaluate', '-e', action='store_true', default=True)
 parser.add_argument('--filtered', action='store_true', default=False)
 parser.add_argument('--filter_threshold', default=0.05, type=float)
 parser.add_argument('--log', action='store_true', default=False)
@@ -122,7 +121,7 @@ if args.pretrained is not None:
     for k, v in checkpoint.items():
         new_state_dict[k.replace('module.', '')] = v
     model.load_state_dict(new_state_dict)
-if args.evaluate:
+if True:
     loss, maxerr, avgerr, errs, preds = test(valloader, model, 0, args)
     f_errs = logfile
     earr = np.array(errs)
