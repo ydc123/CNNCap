@@ -51,6 +51,9 @@ saved_models
 └── best.model_CNNCap_msre_55nm_C_2_4_6_env.pth.tar
 ```
 
+For the 3-D pattern, we generate datasets from a real layout design. 
+See [here](3d/dataset/Readme.md) for details of the datasets.
+
 ## Running Commands for 2-D Pattern
 
 You can run the following command to predict the total capacitance of 15nm_B_2_4_6 dataset with the model we provide.
@@ -81,6 +84,8 @@ For more details on training and testing code, please refer to `train.py` and `t
 
 You can run the following command to predict the total or coupling capacitance with the model we provide. 
 The checkpoint files can be downloaded from [here](https://drive.google.com/file/d/17lE6xtwcRmEV3UaeSA0jW3xRY3FU11TQ/view).
+After downloading and extracting the compressed file, you will get `resnet34_total.pth` and `resnet34_env.pth`, 
+which are the pretrained parameters of resnet34 models for total capacitance and coupling capacitance.
 
 ```
 cd 3d/model
